@@ -12,5 +12,10 @@
   "destination": {
      "host": "www.the.side.you.will.protect.de",
      "port": "80"
-  }
+  },
+
+  "exceptions": [
+     "^/api.php",
+     "^/icons/(.*)"
+  ]
 }
