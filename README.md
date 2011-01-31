@@ -24,3 +24,15 @@ Authentication
   and the user's email address. Both values have to be sent as GET parameters with the names
   configured in the `settings.json`. You will find an example authentication server in the
   file [authserver.js](https://github.com/hudora/node-http-auth-proxy/blob/master/doc/authserver.js).
+
+
+Exceptions
+----------
+
+* the proxy allows to configuration URL paths which shouldn't be authenticated. To do so
+  there's the `exceptions` configuration option. The options contains a list of regular
+  expressions to be matched against the requested URL:
+      "exceptions": [
+         "^/api.php",
+         "^/icons/(.*)"
+      ]
