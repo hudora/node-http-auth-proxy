@@ -30,8 +30,8 @@ Exceptions
 ----------
 
 * the proxy allows to configuration URL paths which shouldn't be authenticated. To do so
-  there's the `exceptions` configuration option. The options contains a list of regular
-  expressions to be matched against the requested URL:
+  there is the `exceptions` configuration option. The option is a list of regular expressions
+  to be matched against the requested URL for each request:
       "exceptions": [
          "^/api.php",
          "^/icons/(.*)"
