@@ -24,6 +24,10 @@ Authentication
   and the user's email address. Both values have to be sent as GET parameters with the names
   configured in the `settings.json`. You will find an example authentication server in the
   file [authserver.js](https://github.com/hudora/node-http-auth-proxy/blob/master/doc/authserver.js).
+* the email adresse of the authenticated user will be forwarded to the server secured by the
+  proxy by the means of an additional HTTP request header, 'x-auth-proxy-username'. The 
+  destination server might react by filtering or modifying its response to the request 
+  depending on which user was authenticated by the proxy.
 
 
 Exceptions
