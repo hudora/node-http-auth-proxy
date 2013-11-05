@@ -40,3 +40,7 @@ Exceptions
          "^/api.php",
          "^/icons/(.*)"
       ]
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hudora/node-http-auth-proxy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
